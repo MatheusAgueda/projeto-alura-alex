@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Alex Analista Esportiva</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index_alex.html">Alex</a></li>
+          <li><a href="index_analises.html">Analistic</a></li>
+          <li><a href="index_sobre.html">About me</a></li>
+          <li><a href="index_contato.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="title-container">
+        <h1>Alex Analista Esportiva</h1>
+        <p class="subtitle">Olá, seja bem vindo ao universo das análises oque deseja saber?</p>
+      </div>
+    </header>
+    <main>
+      <div class="chat-container">
+        <div id="chat-history" class="response"></div>
+        <form>
+          <label for="input-text">
+            <p class="question">Olá, Pergunte me qualquer coisa:</p>
+          </label>
+          <p>
+            <input type="text" id="input-text" name="input-text" required>
+            <button type="button" onclick="connectChatGPT()" class="buttonenviar">Enviar</button>
+          </p>
+        </form>
+      </div>
+    </main>
+    <script>
+      const chatHistory = document.getElementById('chat-history');
+
+  // Adiciona mensagem ao histórico de chat
+  function addMessageToChatHistory(message, sender) {
+    const messageHTML = `<p class="message ${sender}">${sender === 'user' ? 'Você' : 'ChatGPT'}: ${message}</p>`;
+    chatHistory.innerHTML += messageHTML;
+  }
+
+  // Adiciona indicador de digitação
+  function addTypingIndicator() {
+    const typingIndicatorHTML = `<p class="typing-indicator">ChatGPT está digitando...</p>`;
+    chatHistory.innerHTML += typingIndicatorHTML;
+  }
+
+  // Remove indicador de digitação
+  function removeTypingIndicator() {
+    const typingIndicator = document.querySelector('.typing-indicator');
+    if (typingIndicator) {
+      typingIndicator.remove();
+    }
+  }
+
+  // Conecta com o ChatGPT
+  async function connectChatGPT() {
+    const inputText = document.getElementById('input-text').value;
+    addMessageToChatHistory(inputText, 'user');
+    addTypingIndicator();
+
+    // Configurações da API do OpenAI
+    const apiKey = "COLOQUE SUA API AQUI "; // API AQUI
+    const modelEngine = "text-davinci-003";
+    const prompt = inputText;
+    const maxTokens = 2048;
+    const temperature = 0.5;
+
+    // Faz a requisição para o ChatGPT
+    const response = await axios.post(
+      "https://api.openai.com/v1/completions", {
+        prompt,
+        max_tokens: maxTokens,
+        temperature,
+        model: modelEngine,
+      }, {
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${apiKey}`,
+        },
+      });
+
+    // Trata a resposta do ChatGPT
+    const responseData = response.data.choices[0].text.trim();
+    removeTypingIndicator();
+    addMessageToChatHistory(responseData, 'bot');
+  }
+</script>
+  </body>
+</html>

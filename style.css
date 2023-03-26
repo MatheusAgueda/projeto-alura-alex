@@ -1,0 +1,215 @@
+/* Definindo a codificação */
+@charset "UTF-8";
+
+/* Estilos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.paragrafo {
+    font-family: 'Krona One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.titlebutton {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.buttonslinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #272727;
+}
+
+.imagem_ai {
+    width: 32px;
+    height: 32px;
+    background: url(assets/AI.png);
+}
+
+.imagem_analise {
+    width: 32px;
+    height: 32px;
+    background: url(assets/analise_trade.png);
+}
+
+.imagem_empresaria {
+    width: 32px;
+    height: 32px;
+    background: url(assets/alexempresaria.png);
+}
+
+.conteudo {
+    width: 615px;
+    display: flex;
+    gap: 40px;
+}
+
+.conteudotitulo {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudotexto {
+    font-family: 'Montserrat'sans-serif;
+    font-size: 24px;
+
+}
+
+
+/* Estilos para o topo da página */
+.top-frame {
+    background-color: #22D4FD;
+    color: #F6F6F6;
+    padding: 16px;
+    text-align: center;
+}
+
+
+.top-frame h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 16px;
+}
+
+nav a {
+    color: #F6F6F6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #22D4FD;
+}
+
+/* Estilos para a caixa de histórico de chat */
+.response {
+    margin: 16px;
+    padding: 16px;
+    border: 2px solid #22D4FD;
+    background-color: #333;
+    border-radius: 8px;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.response p {
+    margin: 8px 0;
+}
+
+.message {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #22D4FD;
+}
+
+.user {
+    background-color: #5a5a5a;
+}
+
+.bot {
+    background-color: #444;
+}
+
+.typing-indicator {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Estilos para a caixa de entrada de chat */
+.bottom-frame {
+    background-color: #333;
+    border-top: 2px solid #222;
+    padding: 16px;
+    text-align: center;
+}
+
+.question {
+    margin: 0;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    margin: 8px 0;
+    background-color: #444;
+    color: #F6F6F6;
+}
+
+/* Estilos para o footer/rodapé */
+
+.footer {
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
