@@ -210,22 +210,21 @@ input[type="text"] {
     color: var(--cor-secundaria);
 }
 
-.button {
-    display: flex;
+.buttonenviar {
+    background-color: var(--cor-primaria);
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 35%;
+    height: 2%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 21.5px 1;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    cursor: pointer;
-    transition: all 0.2s ease;
 }
 
 .buttonenviar:hover {
