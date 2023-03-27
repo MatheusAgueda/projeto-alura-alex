@@ -6,9 +6,12 @@
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #00FFFF;
-
+    --cor-quartaria: #333;
+    --cor-quintaria: #5a5a5a;
+    --cor-sextaria: #444;
+    --cor-septuaria: #222;
     --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Montserrat'sans-serif;
 }
 
 /* Estilos gerais */
@@ -146,4 +149,85 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
+}
+
+/*pg alex /*
+/* Estilos para a caixa de histórico de chat pg ALEX*/
+.response {
+    margin: 16px;
+    padding: 16px;
+    border: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-quartaria);
+    border-radius: 8px;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.response p {
+    margin: 8px 0;
+}
+
+.message {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.user {
+    background-color: var(--cor-quintaria);
+}
+
+.bot {
+    background-color: var(--cor-sextaria);
+}
+
+.typing-indicator {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Estilos para a caixa de entrada de chat pg ALEX*/
+.bottom-frame {
+    background-color: var(--cor-quartaria);
+    border-top: 2px solid var(--cor-septuaria);
+    padding: 16px;
+    text-align: center;
+}
+
+.question {
+    margin: 0;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    margin: 8px 0;
+    background-color: var(--cor-sextaria);
+    color: var(--cor-secundaria);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buttonenviar:hover {
+    background-color: var(--cor-terciaria);
 }
