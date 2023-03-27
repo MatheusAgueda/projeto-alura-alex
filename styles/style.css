@@ -1,0 +1,138 @@
+/* Definindo a codificação */
+@charset "UTF-8";
+
+/* Estilos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cabecalho__menu__link:hover {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao_conteudotitulo {
+    padding: 8% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao_conteudo_texto {
+    font-family: 'Montserrat'sans-serif;
+    font-size: 24px;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.paragrafo {
+    font-family: 'Krona One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao_links_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #272727;
+}
+
+.imagem_ai {
+    width: 32px;
+    height: 32px;
+    background: url(assets/AI.png);
+}
+
+.imagem_analise {
+    width: 32px;
+    height: 32px;
+    background: url(assets/analise_trade.png);
+}
+
+.imagem_empresaria {
+    width: 32px;
+    height: 32px;
+    background: url(assets/alexempresaria.png);
+}
+
+/* Estilos para o footer/rodapé */
+
+.footer {
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
