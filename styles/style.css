@@ -239,5 +239,10 @@ input[type="text"] {
 
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
     }
 }
