@@ -62,7 +62,7 @@ body {
     gap: 40px;
 }
 
-.apresentacao_conteudotitulo {
+.apresentacao_conteudo_titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
@@ -107,7 +107,7 @@ body {
     font-family: var(--fonte-secundaria);
 }
 
-.apresentacao_links_links:hover {
+.apresentacao_links_navegacao:hover {
     background-color: var(--cor-terciaria);
 }
 
