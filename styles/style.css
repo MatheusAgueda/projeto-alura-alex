@@ -1,4 +1,4 @@
-/* Definindo a codificação */
+/* Definindo a codificação e importações úteis */
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
@@ -15,7 +15,6 @@
 }
 
 /* Estilos gerais */
-
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +37,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-secundaria);
     text-decoration: none;
@@ -53,10 +52,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao_conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -73,7 +73,7 @@ body {
 
 .apresentacao_conteudo_texto {
     font-family: var(--fonte-secundaria);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--cor-secundaria);
 }
 
@@ -91,12 +91,12 @@ body {
     font-size: 1.5rem;
 }
 
-.apresentacao_links_links {
+.apresentacao_links_navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -109,6 +109,21 @@ body {
 
 .apresentacao_links_links:hover {
     background-color: var(--cor-terciaria);
+}
+
+.apresentacao_imagem {
+    width: 50%;
+}
+
+/* Estilos para o footer/rodapé */
+.footer {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .imagem_ai {
@@ -129,30 +144,11 @@ body {
     background: url(assets/alexempresaria.png);
 }
 
-.apresentacao_imagem_alex {
-    width: 500px;
-    height: 532px;
-    background: url(../assets/alex.png);
-    position: absolute;
-    left: 1032px;
-    top: 253px;
-    border-radius: 16px;
-}
 
-/* Estilos para o footer/rodapé */
 
-.footer {
-    padding: 24px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
 
-/*pg alex /*
-/* Estilos para a caixa de histórico de chat pg ALEX*/
+
+/* Estilos para a caixa de histórico de chat ALEX pg alex */
 .response {
     margin: 16px;
     padding: 16px;
@@ -187,7 +183,7 @@ body {
     font-style: italic;
 }
 
-/* Estilos para a caixa de entrada de chat pg ALEX*/
+/* Estilos para a caixa de entrada de chat ALEX pg alex */
 .bottom-frame {
     background-color: var(--cor-quartaria);
     border-top: 2px solid var(--cor-septuaria);
@@ -229,4 +225,19 @@ input[type="text"] {
 
 .buttonenviar:hover {
     background-color: var(--cor-terciaria);
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
