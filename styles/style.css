@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #00FFFF;
-    --cor-quartaria: #333;
-    --cor-quintaria: #5a5a5a;
-    --cor-sextaria: #444;
-    --cor-septuaria: #222;
+    --cor-primaria: #282a36;
+    --cor-secundaria: #f8f8f2;
+    --cor-terciaria: #ff79c6;
+    --cor-quartaria: #282a36;
+    --cor-quintaria: #44475a;
+    --cor-sextaria: #f8f8f2;
+    --cor-septuaria: #ff79c6;
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat'sans-serif;
 }
