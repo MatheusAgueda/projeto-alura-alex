@@ -149,11 +149,14 @@ body {
 
 
 /* Estilos para a caixa de histórico de chat ALEX pg alex */
+
+
 .response {
     margin: 16px;
     padding: 16px;
     border: 2px solid var(--cor-terciaria);
     background-color: var(--cor-quartaria);
+    color: black;
     border-radius: 8px;
     overflow-y: scroll;
     height: 400px;
